@@ -1,7 +1,7 @@
 from geopy import geocoders
     
 placeName = raw_input("Enter Place:")
-google = geocoders.Google('ABQIAAAAyd8Ez46q598IKMNLNbUO9RTbHIotSlz7z8MSqWC_WMDTAjxWXxQ08mhs95XefmX1qPzksMdiZ4u7NQ')
+google = geocoders.Google('your_key')
 place, (lat, lng) = google.geocode(placeName)
 print "\nGoogle Results: %s: %.5f, %.5f" % (place, lat, lng) 
 
